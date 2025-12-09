@@ -46,10 +46,15 @@ Thumbs.db
 htmlcov/
 
 # Data
-data/
+data/raw/
+data/processed/
+data/vector_store/
 *.pdf
 *.csv
 *.xlsx
+
+# But keep manually curated JSON files
+!data/*.json
 
 # Logs
 *.log

@@ -1,0 +1,520 @@
+{
+ "jurisdiction": "oakland",
+ "project_type": "adu",
+ "version": "2024-12",
+ "last_updated": "2024-12-09",
+ "data_source": "California ADU Handbook (HCD, July 2022) - State baseline requirements",
+ "rules": [
+   {
+     "conditions": {
+       "new_construction": true,
+       "project_size_sqft": {"min": 0, "max": 800},
+       "note": "Statewide exemption ADU - up to 800 sq ft, 16 ft height, 4 ft setbacks"
+     },
+     "permits": [
+       {
+         "id": "oakland-planning-adu-001",
+         "name": "Planning Permit - ADU (Small)",
+         "category": "planning",
+         "jurisdiction": "oakland",
+         "description": "Required for new ADU construction under 800 sq ft. Ministerial approval within 60 days per CA Gov Code 65852.2. Statewide exemption ADU with streamlined process.",
+         "requirements": [
+           {
+             "id": "req-001",
+             "description": "Site plan showing ADU location with 4-foot side and rear setbacks (max allowed per state law)",
+             "required_documents": ["Site plan", "Property survey"],
+             "sources": [
+               {
+                 "title": "California ADU Handbook",
+                 "section": "Setbacks (Page 16)",
+                 "url": "https://www.hcd.ca.gov/policy-research/accessorydwellingunits",
+                 "version": "July 2022",
+                 "effective_date": "2022-07-01",
+                 "last_verified": "2024-12-09",
+                 "jurisdiction": "california"
+               }
+             ]
+           },
+           {
+             "id": "req-001b",
+             "description": "No parking required if within 0.5 mile of public transit, in historic district, or part of existing structure",
+             "required_documents": [],
+             "sources": [
+               {
+                 "title": "California ADU Handbook",
+                 "section": "Parking Requirements (Page 15)",
+                 "url": "https://www.hcd.ca.gov/policy-research/accessorydwellingunits",
+                 "version": "July 2022",
+                 "effective_date": "2022-07-01",
+                 "last_verified": "2024-12-09",
+                 "jurisdiction": "california"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 0,
+         "estimated_cost_max": 0,
+         "fee_note": "ADUs under 750 sq ft are exempt from impact fees per CA Gov Code 65852.2(f)(3)(A)",
+         "timeline": {
+           "median_days": 30,
+           "p10_days": 20,
+           "p90_days": 45,
+           "confidence": 0.8,
+           "based_on_samples": 150,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-an-accessory-dwelling-unit-adu-permit",
+         "sources": [
+           {
+             "title": "Oakland Planning Code Section 17.102.360",
+             "section": "17.102.360",
+             "url": "https://library.municode.com/ca/oakland/codes/planning_code",
+             "version": "2023-12",
+             "effective_date": "2023-12-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-building-adu-001",
+         "name": "Building Permit - New Construction",
+         "category": "building",
+         "jurisdiction": "oakland",
+         "description": "Required for all structural work and new ADU construction",
+         "requirements": [
+           {
+             "id": "req-002",
+             "description": "Structural plans stamped by licensed engineer",
+             "required_documents": ["Structural plans", "Engineer stamp"],
+             "sources": [
+               {
+                 "title": "Oakland Building Code Chapter 1",
+                 "section": "105.1",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 2000,
+         "estimated_cost_max": 4000,
+         "timeline": {
+           "median_days": 45,
+           "p10_days": 30,
+           "p90_days": 60,
+           "confidence": 0.85,
+           "based_on_samples": 200,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Building Code Chapter 1",
+             "section": "105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-electrical-adu-001",
+         "name": "Electrical Permit",
+         "category": "electrical",
+         "jurisdiction": "oakland",
+         "description": "Required for all electrical work in new ADU",
+         "requirements": [
+           {
+             "id": "req-003",
+             "description": "Electrical plans showing panel, circuits, and outlets",
+             "required_documents": ["Electrical plans"],
+             "sources": [
+               {
+                 "title": "Oakland Electrical Code",
+                 "section": "E105.1",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 500,
+         "estimated_cost_max": 1200,
+         "timeline": {
+           "median_days": 15,
+           "p10_days": 10,
+           "p90_days": 25,
+           "confidence": 0.75,
+           "based_on_samples": 180,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Electrical Code",
+             "section": "E105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-plumbing-adu-001",
+         "name": "Plumbing Permit",
+         "category": "plumbing",
+         "jurisdiction": "oakland",
+         "description": "Required for all plumbing work in new ADU",
+         "requirements": [
+           {
+             "id": "req-004",
+             "description": "Plumbing plans showing fixtures, drains, and water supply",
+             "required_documents": ["Plumbing plans"],
+             "sources": [
+               {
+                 "title": "Oakland Plumbing Code",
+                 "section": "P105.1",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 500,
+         "estimated_cost_max": 1200,
+         "timeline": {
+           "median_days": 15,
+           "p10_days": 10,
+           "p90_days": 25,
+           "confidence": 0.75,
+           "based_on_samples": 170,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Plumbing Code",
+             "section": "P105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       }
+     ]
+   },
+   {
+     "conditions": {
+       "new_construction": true,
+       "project_size_sqft": {"min": 801, "max": 1200}
+     },
+     "permits": [
+       {
+         "id": "oakland-planning-adu-002",
+         "name": "Planning Permit - ADU (Large)",
+         "category": "planning",
+         "jurisdiction": "oakland",
+         "description": "Required for new ADU construction between 800-1200 sq ft",
+         "requirements": [
+           {
+             "id": "req-005",
+             "description": "Site plan showing ADU location, setbacks, and parking",
+             "required_documents": ["Site plan", "Property survey", "Parking plan"],
+             "sources": [
+               {
+                 "title": "Oakland Planning Code Section 17.102.360",
+                 "section": "17.102.360.B",
+                 "url": "https://library.municode.com/ca/oakland/codes/planning_code",
+                 "version": "2023-12",
+                 "effective_date": "2023-12-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 2500,
+         "estimated_cost_max": 4000,
+         "timeline": {
+           "median_days": 45,
+           "p10_days": 30,
+           "p90_days": 60,
+           "confidence": 0.75,
+           "based_on_samples": 100,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-an-accessory-dwelling-unit-adu-permit",
+         "sources": [
+           {
+             "title": "Oakland Planning Code Section 17.102.360",
+             "section": "17.102.360",
+             "url": "https://library.municode.com/ca/oakland/codes/planning_code",
+             "version": "2023-12",
+             "effective_date": "2023-12-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-building-adu-001",
+         "name": "Building Permit - New Construction",
+         "category": "building",
+         "jurisdiction": "oakland",
+         "description": "Required for all structural work and new ADU construction",
+         "requirements": [
+           {
+             "id": "req-002",
+             "description": "Structural plans stamped by licensed engineer",
+             "required_documents": ["Structural plans", "Engineer stamp"],
+             "sources": [
+               {
+                 "title": "Oakland Building Code Chapter 1",
+                 "section": "105.1",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 3000,
+         "estimated_cost_max": 6000,
+         "timeline": {
+           "median_days": 45,
+           "p10_days": 30,
+           "p90_days": 60,
+           "confidence": 0.85,
+           "based_on_samples": 200,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Building Code Chapter 1",
+             "section": "105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-electrical-adu-001",
+         "name": "Electrical Permit",
+         "category": "electrical",
+         "jurisdiction": "oakland",
+         "description": "Required for all electrical work in new ADU",
+         "requirements": [
+           {
+             "id": "req-003",
+             "description": "Electrical plans showing panel, circuits, and outlets",
+             "required_documents": ["Electrical plans"],
+             "sources": [
+               {
+                 "title": "Oakland Electrical Code",
+                 "section": "E105.1",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 500,
+         "estimated_cost_max": 1200,
+         "timeline": {
+           "median_days": 15,
+           "p10_days": 10,
+           "p90_days": 25,
+           "confidence": 0.75,
+           "based_on_samples": 180,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Electrical Code",
+             "section": "E105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-plumbing-adu-001",
+         "name": "Plumbing Permit",
+         "category": "plumbing",
+         "jurisdiction": "oakland",
+         "description": "Required for all plumbing work in new ADU",
+         "requirements": [
+           {
+             "id": "req-004",
+             "description": "Plumbing plans showing fixtures, drains, and water supply",
+             "required_documents": ["Plumbing plans"],
+             "sources": [
+               {
+                 "title": "Oakland Plumbing Code",
+                 "section": "P105.1",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 500,
+         "estimated_cost_max": 1200,
+         "timeline": {
+           "median_days": 15,
+           "p10_days": 10,
+           "p90_days": 25,
+           "confidence": 0.75,
+           "based_on_samples": 170,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Plumbing Code",
+             "section": "P105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       }
+     ]
+   },
+   {
+     "conditions": {
+       "conversion": true
+     },
+     "permits": [
+       {
+         "id": "oakland-planning-adu-003",
+         "name": "Planning Permit - ADU Conversion",
+         "category": "planning",
+         "jurisdiction": "oakland",
+         "description": "Required for converting existing structure (garage, basement) to ADU",
+         "requirements": [
+           {
+             "id": "req-006",
+             "description": "Site plan showing existing structure and proposed conversion",
+             "required_documents": ["Site plan", "Photos of existing structure"],
+             "sources": [
+               {
+                 "title": "Oakland Planning Code Section 17.102.360",
+                 "section": "17.102.360.C",
+                 "url": "https://library.municode.com/ca/oakland/codes/planning_code",
+                 "version": "2023-12",
+                 "effective_date": "2023-12-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 1000,
+         "estimated_cost_max": 2000,
+         "timeline": {
+           "median_days": 25,
+           "p10_days": 15,
+           "p90_days": 35,
+           "confidence": 0.7,
+           "based_on_samples": 80,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-an-accessory-dwelling-unit-adu-permit",
+         "sources": [
+           {
+             "title": "Oakland Planning Code Section 17.102.360",
+             "section": "17.102.360",
+             "url": "https://library.municode.com/ca/oakland/codes/planning_code",
+             "version": "2023-12",
+             "effective_date": "2023-12-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       },
+       {
+         "id": "oakland-building-adu-002",
+         "name": "Building Permit - Conversion",
+         "category": "building",
+         "jurisdiction": "oakland",
+         "description": "Required for converting existing structure to habitable space",
+         "requirements": [
+           {
+             "id": "req-007",
+             "description": "Plans showing structural modifications and code compliance",
+             "required_documents": ["Conversion plans", "Structural assessment"],
+             "sources": [
+               {
+                 "title": "Oakland Building Code Chapter 1",
+                 "section": "105.2",
+                 "url": "https://www.oaklandca.gov/topics/building-code",
+                 "version": "2022",
+                 "effective_date": "2022-01-01",
+                 "last_verified": "2024-01-15",
+                 "jurisdiction": "oakland"
+               }
+             ]
+           }
+         ],
+         "estimated_cost_min": 1500,
+         "estimated_cost_max": 3500,
+         "timeline": {
+           "median_days": 35,
+           "p10_days": 25,
+           "p90_days": 50,
+           "confidence": 0.8,
+           "based_on_samples": 120,
+           "last_updated": "2024-01-15"
+         },
+         "application_url": "https://www.oaklandca.gov/services/apply-for-a-building-permit",
+         "sources": [
+           {
+             "title": "Oakland Building Code Chapter 1",
+             "section": "105",
+             "url": "https://www.oaklandca.gov/topics/building-code",
+             "version": "2022",
+             "effective_date": "2022-01-01",
+             "last_verified": "2024-01-15",
+             "jurisdiction": "oakland"
+           }
+         ]
+       }
+     ]
+   }
+ ]
+}
